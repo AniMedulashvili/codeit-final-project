@@ -1,5 +1,5 @@
 :root {
-  --background: #ffffff;
+  --background: #e3e2e2;
   --foreground: #171717;
 }
 
@@ -40,3 +40,4 @@ a {
     color-scheme: dark;
   }
 }
+ 
