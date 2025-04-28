@@ -20,7 +20,7 @@ export default function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (login) {
+    if (login) {-
       fetch("https://fakestoreapi.com/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

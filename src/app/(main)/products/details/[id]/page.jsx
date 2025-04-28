@@ -1,3 +1,4 @@
+import AddToCart from "@/components/AddToCart/AdToCart";
 import styles from "./page.module.css"
 async function page({ params }) {
     const id = params.id;
@@ -24,6 +25,7 @@ async function page({ params }) {
           <p className={styles.category}>Category: {product.category}</p>
           <p className={styles.rate}>Rating: {product.rating.rate}</p>
           <p className={styles.Count}>Count: {product.rating.count}</p>
+         <AddToCart product={product}/>
         </div>
       </main>
     );
