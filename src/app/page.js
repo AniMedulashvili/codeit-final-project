@@ -20,52 +20,63 @@ export default function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (login) {-
+    if (login) {
       fetch("https://fakestoreapi.com/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           username: username,
-          password: 'm38rmF$',
+          password: 'm38rmF$', 
         }),
       })
         .then((res) => res.json())
         .then((res) => {
           if (res.token) {
+            localStorage.setItem("user", JSON.stringify({ username, token: res.token }));
             router.replace("/products");
-          } 
+          }
         })
         .catch((error) => {
           console.log(error.message);
         });
     } else {
+      const newUser = {
+        email: email,
+        username: username,
+        password: password,
+        name: {
+          firstname: "Test",
+          lastname: "User",
+        },
+        address: {
+          city: "Tbilisi",
+          street: "Main St",
+          number: 1,
+          zipcode: "0100",
+          geolocation: {
+            lat: "0",
+            long: "0",
+          },
+        },
+        phone: "555123456",
+      };
+
       fetch("https://fakestoreapi.com/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email: email,
-          username: username,
-          password: password,
-          name: {
-            firstname: "Test",
-            lastname: "User",
-          },
-          address: {
-            city: "Tbilisi",
-            street: "Main St",
-            number: 1,
-            zipcode: "0100",
-            geolocation: {
-              lat: "0",
-              long: "0",
-            },
-          },
-          phone: "555123456",
-        }),
+        body: JSON.stringify(newUser),
       })
         .then((res) => res.json())
         .then((res) => {
           console.log(res);
+
+
+          localStorage.setItem("user", JSON.stringify({
+            username: res.username,
+            email: res.email,
+            id: res.id,
+          }));
+
           router.replace("/products");
         })
         .catch((error) => {

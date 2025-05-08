@@ -82,7 +82,14 @@ function page() {
     localStorage.setItem("products", JSON.stringify([...products]));
   };
 
+  const handleRemoveOne = async (product) => {
+    const products = await JSON.parse(localStorage.getItem("products"));
+    const index = products.findIndex((item) => item.product.id === product.id);
+    products[index].count--;
 
+    setCartProducts(products);
+    localStorage.setItem("products", JSON.stringify([...products]));
+  };
 
   return (
     <div className={styles.container}>
@@ -99,9 +106,9 @@ function page() {
           <p className={styles.count}>{prod.product.description}</p>
           </div>
           <div className={styles.buttonWrapper}>
-            <button className={styles.add} onClick={() => handleAddOne(prod.product)}>add 1</button>
+            <button className={styles.add} onClick={() => handleAddOne(prod.product)}>add +1</button>
             <button className={styles.Remove} onClick={() => handleRemoveOne(prod.product)}>
-              remove 1
+              remove -1
             </button>
           </div>
         </div>
