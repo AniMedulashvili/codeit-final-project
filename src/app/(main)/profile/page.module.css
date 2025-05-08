@@ -1,28 +1,32 @@
-.image {
-   border-radius: 50%;
-   border: 1px solid  gray
-}
-
-.container {
-    height: 100vh;
+ .container {
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    gap: 2rem;
+    padding: 100px;
+    background: white;
 }
 
-.infoWrapper {
-    display: flex;
-    gap: 20px;
-    padding: 5px 10px;
-    border-radius: 8px;
-    border: 1px solid gray 
+.image {
+    border-radius: 50%;
+    border: 1px solid black;
 }
 
 .section {
     display: flex;
-    flex-wrap: wrap;
-    padding: 2rem;
-    gap: 20px;
+ flex-direction: column;
+    gap: 1.5rem;
+    width: 1000000px;
+    max-width: 400px;
 }
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(2, 2, 67);
+    border-radius: 8px;
+    background-color: white;
+}
+

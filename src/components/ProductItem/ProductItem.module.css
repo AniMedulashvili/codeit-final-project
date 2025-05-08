@@ -4,10 +4,10 @@
     border: 1px solid transparent;
     border-radius: 10px;
     padding: 10px;
-    background-color: white;
+    background-color: rgba(144, 219, 202, 0.824);
 }
 .itemContainer:hover {
-    border: 1px solid skyblue;
+    border: 2px solid rgb(7, 10, 129);
 }
 
 .imageContainer {
@@ -35,10 +35,10 @@
     height: 80px;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    /* -webkit-line-clamp: 5; */
     -webkit-box-orient: vertical;
     font-weight: 400;
-    color: rgb(120, 116, 116);
+    color: rgb(11, 3, 48);
     margin-top: 20px;
 }
 
@@ -69,6 +69,6 @@
 }
 
 .ratingCount {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding-top: 4px;
 }
