@@ -1,5 +1,7 @@
+`'use'`
 import AddToCart from "@/components/AddToCart/AdToCart";
 import styles from "./page.module.css"
+import BackToProducts from "@/components/BackToProducts/BackToProducts";
 async function page({ params }) {
     const id = params.id;
   
@@ -12,8 +14,7 @@ async function page({ params }) {
     }
 
     const product = products.find((p) => p.id == id);
-  
-  
+
     return (
       <main className={styles.container}>
         <div>
@@ -25,7 +26,11 @@ async function page({ params }) {
           <p className={styles.category}>Category: {product.category}</p>
           <p className={styles.rate}>Rating: {product.rating.rate}</p>
           <p className={styles.Count}>Count: {product.rating.count}</p>
-         <AddToCart product={product}/>
+             <AddToCart product={product}/>
+         <div className={styles.Back}>
+        <BackToProducts />                        
+        </div>
+         
         </div>
       </main>
     );

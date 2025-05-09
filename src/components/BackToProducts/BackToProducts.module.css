@@ -1,7 +1,6 @@
-
-.addToCartButton {
+.BackToProducts {
   padding: 10px 10px;
-  background-color: #0c3ebe; 
+  background-color: #1856c9; 
   color: white;
   border: none;
   cursor: pointer;
@@ -9,19 +8,20 @@
   border-radius: 5px;
   transition: background-color 0.3s ease;
   font-weight: bold;
-  width: 100px;
+  width: 160px;
+  height: 38px;
   text-align: center;
   display: inline-block;
 }
 
-.addToCartButton:hover {
-  background-color: #0f8e97;
+.BackToProducts:hover {
+  background-color: #199aea;
 }
 
-.addToCartButton:active {
+.BackToProducts:active {
   transform: scale(0.98);
 }
 
-.addToCartButton:focus {
+.BackToProducts:focus {
   outline: none;
 }

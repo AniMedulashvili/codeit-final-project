@@ -1,45 +1,11 @@
-/* .container {
-    height: 100vh;
+.container { 
+     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     padding: 140px 40px 0px;
     gap: 20px;
-} */
-
-/* 
-.container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 140px 40px 0px;
-    gap: 20px;
-}
-
-.itemWrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 8px 16px;
-    background-color: white;
-    align-items: center;
-}
-
-.buttonWrapper {
-    display: flex;
-    gap: 20px;
-}*/
-
-
-
-.container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 140px 40px 0px;
-    gap: 20px;
-    background-color: rgba(63, 78, 240, 0.228);
+    background-color: rgb(203, 199, 216);
 }
 
 .itemWrapper {
@@ -49,7 +15,7 @@
     border: 3px solid rgb(33, 36, 34);
     border-radius: 8px;
     padding: 8px 16px;
-    background-color: rgba(197, 225, 234, 0.699);
+    background-color: rgba(229, 225, 225, 0.699);
     align-items: center;
     height: 110px;
     width: 1460px;
@@ -69,11 +35,11 @@
 
 .add {
   height: 30px;
-  width: 50px;
+  width: 70px;
   text-align: center;
   border-radius: 8px;
   border-color: rgb(14, 14, 16);
-  background-color: rgb(44, 190, 93);
+  background-color: rgb(114, 231, 153);
 }
 
 .Remove {
@@ -82,5 +48,5 @@
     text-align: center;
     border-radius: 8px;
     border-color: black;
-    background-color: rgb(220, 14, 14);
+    background-color: rgb(232, 44, 44);
 }
