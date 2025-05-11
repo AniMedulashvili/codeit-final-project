@@ -7,7 +7,7 @@ const BackToProducts = () => {
     const handleBackToProducts = () => {
         router.replace("/products");
     };
-    return <button className={styles.BackToProducts} onClick={handleBackToProducts}>👈Back To Products</button>
+    return <button className={styles.BackToProducts} onClick={handleBackToProducts}>👈Back</button>
 }
 
 export default BackToProducts;

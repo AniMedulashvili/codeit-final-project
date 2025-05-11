@@ -6,12 +6,15 @@
     align-items: center;
     gap: 2rem;
     padding: 100px;
-    background: rgb(165, 224, 230);
+    background: rgba(130, 214, 250, 0.584);
 }
 
 .image {
-    border-radius: 50%;
-    border: 1px solid black;
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 150px; 
+  height: 150px;
+  object-fit: cover; 
 }
 
 .section {
@@ -25,9 +28,22 @@
 .infoWrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    /* height: 50px; */
     padding: 0.5rem 1rem;
     border: 1px solid rgb(2, 2, 67);
     border-radius: 8px;
-    background-color: white;
+    background-color: rgb(218, 239, 243);
+}
+.p {
+    padding-top: 5px;
+    font-size: 16px;
+    color: #02023e;
 }
 
+
+.pa {
+    padding-top: 0px;
+}

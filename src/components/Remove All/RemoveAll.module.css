@@ -1,7 +1,7 @@
-.removeButton {
+/* .removeButton {
   margin: 10px 0;
   width: 200px;
-  background-color: rgb(230, 52, 52);
+  background-color: rgb(5, 2, 69);
   color: white;
   border: 1px solid #181616;
   padding: 8px 12px;
@@ -10,4 +10,22 @@
   cursor: pointer;
   text-align: left;
   display: block;
+} */
+
+.removeButton {
+  margin: 30px 0 10px 0; /* ← აქ შევცვალეთ */
+  width: 200px;
+  background-color: rgb(5, 2, 69);
+  color: white;
+  border: 1px solid #181616;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  display: block;
+}
+
+.removeButton:hover {
+  background-color: #031764;
 }

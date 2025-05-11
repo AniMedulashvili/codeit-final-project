@@ -26,48 +26,35 @@ const Profile = async () => {
         />
         <section className={styles.section}>
         <div className={styles.infoWrapper}>
-            <p>სახელი:</p>
-            <p>{profile.firstName}</p>
+            <p className={styles.p}>სახელი: {profile.firstName}</p>
         </div> 
           <div className={styles.infoWrapper}>
-            <p>მაიდენნეიმი:</p>
-            <p>{profile.maidenName}</p>
+            <p className={styles.p}>მაიდენნეიმი: {profile.maidenName}</p>
         </div>
         <div className={styles.infoWrapper}>
-            <p>გვარი:</p>
-            <p>{profile.lastName}</p>
+            <p className={styles.p}>გვარი: {profile.lastName}</p>
         </div>
         <div className={styles.infoWrapper}>
-            <p>ტელეფონი:</p>
-            <p>{profile.phone}</p>
+            <p className={styles.p}>ტელეფონი: {profile.phone}</p>
         </div>
         <div className={styles.infoWrapper}>
-            <p>მეილი:</p>
-            <p>{profile.email}</p>
+            <p className={styles.p}>მეილი: {profile.email}</p>
         </div>
         <div className={styles.infoWrapper}>
-            <p>დაბადების თარიღი:</p>
-            <p>{profile.birthDate}</p>
+            <p className={styles.p}>დაბადების თარიღი: {profile.birthDate}</p>
+           
         </div>
         <div className={styles.infoWrapper}>
-            <p>მისამართი:</p>
-            <p>{profile.address.country};</p>
-            <p>{profile.address.state};</p>  
-            <p>{profile.address.address}</p>
+            <p className={styles.p}>მისამართი: {profile.address.country}; {profile.address.state}; {profile.address.address}</p>
         </div>
         <div className={styles.infoWrapper}>
-            <p>უნივერსიტეტი:</p>
-            <p>{profile.university}</p>
+            <p className={styles.p}>უნივერსიტეტი: {profile.university}</p>
         </div>
         <div className={styles.infoWrapper}>
-            <p>კომპანია:</p>
-            <p>{profile.company.name}</p>
+            <p className={styles.p}>კომპანია: {profile.company.name}</p>
         </div>
         <div className={styles.infoWrapper}>
-            <p>კომპანიის მისმართი:</p>
-            <p>{profile.company.address.city};</p>
-            <p>{profile.company.address.state};</p>
-            <p>{profile.company.address.address}</p>
+            <p className={styles.pa}> კომპანიის მისმართი: {profile.company.address.city}; {profile.company.address.state}; {profile.company.address.address}</p>
         </div>
          </section>
         <SignOut />

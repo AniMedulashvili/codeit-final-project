@@ -3,7 +3,8 @@ import error from "./error";
 import styles from "./page.module.css"
 import Link from 'next/link';
 
-const Profile = async () => {
+
+const Products = async () => {
    let products;
    try {
     const data = await fetch('https://fakestoreapi.com/products')
@@ -21,8 +22,9 @@ const Profile = async () => {
                    <ProductItem key={product.id} item={product}/>
            </Link>
          ))}
+    
         </div>
     )
 }
 
-export default Profile;
+export default Products;

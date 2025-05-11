@@ -3,12 +3,15 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import { usePathname } from "next/navigation";
 
-function layout({ children }) {
+
+function Layout({ children }) {
   const pathname = usePathname();
 
   return (
-    <div className={styles.container}>
+    <section>
+<div className={styles.container}>
       <nav className={styles.nav}>
+       <h1 className={styles.name}>Ani's Online Market</h1>
         <Link
           className={`
             ${styles.link}
@@ -47,11 +50,21 @@ function layout({ children }) {
         >
           Cart
         </Link>
-        
-      </nav>
+    </nav>
       {children}
-    </div>
+ </div>
+ <div>
+        <footer className={styles.footer}>
+        <p>
+          © 2025 Ani's Online Market. All rights reserved. |
+          <a className={styles.terms} href="/terms"> Conditions of Use</a> |
+          <a href="/privacy"> Privacy Policy</a>
+        </p>
+      </footer>
+
+ </div>
+ </section>
   );
 }
 
-export default layout;
+export default Layout;

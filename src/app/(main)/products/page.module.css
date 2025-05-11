@@ -5,5 +5,16 @@
     gap: 20px;
     padding: 20px;
     padding-top: 120px;
-    background-color: rgba(10, 8, 130, 0.858);
+    background-color: rgba(12, 26, 231, 0.566);
 }
+
+.buttonWrapper {
+  position: fixed;
+  bottom: 0px; 
+  top: 680px;
+  left: 20px;  /* თუ მარცხნივ გინდა */
+  z-index: 100;
+}
+
+
+
