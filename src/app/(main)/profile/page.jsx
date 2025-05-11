@@ -54,7 +54,7 @@ const Profile = async () => {
             <p className={styles.p}>კომპანია: {profile.company.name}</p>
         </div>
         <div className={styles.infoWrapper}>
-            <p className={styles.pa}> კომპანიის მისმართი: {profile.company.address.city}; {profile.company.address.state}; {profile.company.address.address}</p>
+            <p className={styles.p}> კომპანიის მისმართი: {profile.company.address.city}; {profile.company.address.state}; {profile.company.address.address}</p>
         </div>
          </section>
         <SignOut />

@@ -4,7 +4,7 @@
     border: 1px solid transparent;
     border-radius: 10px;
     padding: 10px;
-    background-color: rgb(163, 196, 241);
+    background-color: rgb(207, 238, 244);
 }
 .itemContainer:hover {
     border: 2px solid rgb(7, 10, 129);

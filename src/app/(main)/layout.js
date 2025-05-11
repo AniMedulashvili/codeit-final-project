@@ -54,13 +54,25 @@ function Layout({ children }) {
       {children}
  </div>
  <div>
-        <footer className={styles.footer}>
-        <p>
-          © 2025 Ani's Online Market. All rights reserved. |
-          <a className={styles.terms} href="/terms"> Conditions of Use</a> |
-          <a href="/privacy"> Privacy Policy</a>
-        </p>
-      </footer>
+  
+  {/* <footer className={styles.footer}>
+    <p className={styles.pri}>
+      © 2025 Ani's Online Market. All rights reserved. |   
+      <a className={styles.terms} href="/terms"> Conditions of Use</a> |
+      <a href="/privacy"> Privacy Policy</a>
+    </p> 
+  </footer> */}
+  <footer className={styles.footer}>
+  <div className={styles.left}>
+    <a className={styles.link1} href="/terms">Conditions of Use</a>
+    <a className={styles.link1} href="/privacy">Privacy Policy</a>
+  </div>
+  <div className={styles.right}>
+    © 2025 Ani's Online Market. All rights reserved.
+  </div>
+</footer>
+
+
 
  </div>
  </section>
