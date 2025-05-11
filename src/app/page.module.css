@@ -30,6 +30,8 @@
     margin-top: 1rem;
     height: 50px;
     padding: 5px 10px;
+    border-radius: 7px;
+    border-color: rgb(6, 2, 61);
 }
 
 .button {
